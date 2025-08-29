@@ -138,7 +138,49 @@ body {
     border-radius: 8px;
 }
 
+
 @media (max-width: 768px) {
+    .apresentacao {
+        flex-direction: column; /* Coloca tudo em coluna */
+        align-items: center;    /* Centraliza horizontalmente */
+        gap: 20px;              /* Espaço entre os blocos */
+        margin: 5%;
+    }
+
+    .apresentacao__conteudo {
+        width: 100%;
+        gap: 20px;
+    }
+
+    .apresentacao__conteudo__titulo { font-size: 28px; }
+    .apresentacao__conteudo__texto { font-size: 18px; }
+
+    .diretoria__titulo { font-size: 24px; }
+    .diretoria__lista { font-size: 16px; }
+
+    .apresentacao__links__subtitulo { font-size: 20px; }
+    .apresentacao__links__link {
+        width: 80%;
+        font-size: 18px;
+        padding: 12px 0;
+    }
+
+    /* Brasão no meio da tela entre diretoria e links */
+    .imagem__brasao {
+        position: relative;      /* remove o fixed do desktop */
+        order: 2;                /* coloca a imagem entre diretoria e links */
+        width: 80%;              /* tamanho adequado para celular */
+        max-width: 300px;
+        margin: 20px 0;          /* espaço acima e abaixo da imagem */
+    }
+
+    .diretoria { order: 1; }       /* diretoria fica antes da imagem */
+    .apresentacao__links { order: 3; } /* links ficam depois da imagem */
+}
+
+
+
+/* @media (max-width: 768px) {
     .apresentacao {
         flex-direction: column; 
         margin: 5%;
@@ -149,9 +191,9 @@ body {
 
     .imagem__brasao { 
         order: 2;
-        position: relative; /* tira o fixed */
-        top: auto; /* reseta o top do desktop */
-        right: auto; /* reseta o right do desktop */
+        position: relative; 
+        top: auto; 
+        right: auto; 
         width: 80%;
         max-width: 300px;
         margin: 20px auto; 
@@ -177,54 +219,4 @@ body {
         padding: 12px 0;
     }
 }
-
-
-
-
-/* @media (max-width: 768px) {
-    .apresentacao {
-        flex-direction: column; 
-        margin: 5%; 
-    }
-    .diretoria { order: 1; }
-    .imagem__brasao { order: 2; }
-    .apresentacao__links { order: 3; }
-
-    .imagem__brasao {
-        position: relative; 
-        width: 80%; 
-        max-width: 300px;
-        margin: 20px auto; 
-    }
-
-    .apresentacao__conteudo {
-        width: 100%;
-        gap: 20px;
-    }
-
-    .apresentacao__conteudo__titulo {
-        font-size: 28px;
-    }
-
-    .apresentacao__conteudo__texto {
-        font-size: 18px;
-    }
-
-    .diretoria__titulo {
-        font-size: 24px;
-    }
-
-    .diretoria__lista {
-        font-size: 16px;
-    }
-
-    .apresentacao__links__subtitulo {
-        font-size: 20px;
-    }
-
-    .apresentacao__links__link {
-        width: 80%;
-        font-size: 18px;
-        padding: 12px 0;
-    }
-} */
+ */
