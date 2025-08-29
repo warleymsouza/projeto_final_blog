@@ -141,41 +141,42 @@ body {
 
 @media (max-width: 768px) {
     .apresentacao {
-        flex-direction: column; /* Coloca tudo em coluna */
-        align-items: center;    /* Centraliza horizontalmente */
-        gap: 20px;              /* Espaço entre os blocos */
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        gap: 20px;
         margin: 5%;
     }
 
     .apresentacao__conteudo {
         width: 100%;
+        display: flex;
+        flex-direction: column;
         gap: 20px;
     }
 
-    .apresentacao__conteudo__titulo { font-size: 28px; }
-    .apresentacao__conteudo__texto { font-size: 18px; }
-
-    .diretoria__titulo { font-size: 24px; }
-    .diretoria__lista { font-size: 16px; }
-
-    .apresentacao__links__subtitulo { font-size: 20px; }
-    .apresentacao__links__link {
-        width: 80%;
-        font-size: 18px;
-        padding: 12px 0;
+    .diretoria {
+        order: 1; /* Diretoria primeiro */
+        width: 100%;
     }
 
-    /* Brasão no meio da tela entre diretoria e links */
     .imagem__brasao {
-        position: relative;      /* remove o fixed do desktop */
-        order: 2;                /* coloca a imagem entre diretoria e links */
-        width: 80%;              /* tamanho adequado para celular */
+        order: 2; /* Brasão depois da diretoria */
+        position: relative; 
+        width: 80%;
         max-width: 300px;
-        margin: 20px 0;          /* espaço acima e abaixo da imagem */
+        margin: 20px 0;
+        align-self: center; /* centraliza horizontalmente */
     }
 
-    .diretoria { order: 1; }       /* diretoria fica antes da imagem */
-    .apresentacao__links { order: 3; } /* links ficam depois da imagem */
+    .apresentacao__links {
+        order: 3; /* Links por último */
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
 }
 
 
