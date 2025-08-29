@@ -138,24 +138,14 @@ body {
     border-radius: 8px;
 }
 
-/* @media (max-width: 600px) {
-    .galeria__fotos img {
-        width: 100%;    
-    }
-
-    .galeria__titulo {
-        font-size: 28px;  
-    }
-
-    .galeria__texto {
-        font-size: 18px; 
-    }
-} */
  @media (max-width: 768px) {
     .apresentacao {
         flex-direction: column; /* Coloca texto e imagem em coluna */
         margin: 5%; 
     }
+    .diretoria__lista{ order: 1; }
+    .imagem__brasao   { order: 2; }
+    .apresentacao__links { order: 3; }
 
     .imagem__brasao {
         position: relative; /* Evita ficar fixa no topo */
