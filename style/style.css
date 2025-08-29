@@ -143,8 +143,8 @@ body {
         flex-direction: column; /* Coloca texto e imagem em coluna */
         margin: 5%; 
     }
-    .diretoria__lista{ order: 1; }
-    .imagem__brasao   { order: 2; }
+    .diretoria { order: 1; }
+    .imagem__brasao { order: 2; }
     .apresentacao__links { order: 3; }
 
     .imagem__brasao {
