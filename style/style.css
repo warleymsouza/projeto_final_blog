@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'Varsity';
+  src: url(../fonts/varsity.ttf) format('truetype');
+}
+
+
 *{
     margin: 0;
     padding: 0;
@@ -22,6 +28,9 @@ body {
     text-decoration: none;
     color: #8E1616;
     font-size: 1.75rem;
+    font-family: 'Varsity', sans-serif;
+    font-weight: 10;
+    text-shadow: 2px 2px 2px #1D1616;
 }
 .apresentacao {
     margin: 5% 15%;
@@ -38,6 +47,9 @@ body {
 }
 .apresentacao__conteudo__titulo {
     font-size: 2.19rem;
+    font-family: 'Varsity', sans-serif;
+    font-weight: 10;
+    letter-spacing: 2px;
 }
 .apresentacao__conteudo__texto {
     font-size: 1.5rem;
@@ -60,6 +72,9 @@ body {
 }
 .diretoria__titulo{
     font-size: 2.19rem;
+    font-family: 'Varsity', sans-serif;
+    font-weight: normal;
+    letter-spacing: 2px;
 }
 .diretoria__lista{
     font-size: 1.18rem;
@@ -70,11 +85,14 @@ body {
     align-items: center;
     justify-content: space-between;
     gap: 32px;
+    font-family: 'Varsity', sans-serif;
+    font-weight: normal;
 
 }
 .apresentacao__links__subtitulo{
-    font-size: 1.75rem;
+    font-size: 1.50rem;
     font-weight: 400;
+    letter-spacing: 2px;
 }
 .apresentacao__links__link{
     display: flex;
@@ -100,6 +118,9 @@ body {
     font-weight: 400;
     text-align: center;
     padding: 10px;
+    font-family: 'Varsity', sans-serif;
+    font-weight:normal;
+    text-shadow: 2px 2px 5px black;
 }
 .galeria {
     display: flex;
@@ -107,18 +128,25 @@ body {
     align-items: center;
     gap: 40px; 
     margin: 5% 15%;
+   
 }
 
 .galeria__titulo {
     text-align: center;
     font-size: 2.25rem;
     margin-bottom: 10px;
+    font-family: 'Varsity', sans-serif;
+    font-weight: normal;
+    letter-spacing: 2px;
 }
 
 .galeria__texto {
     text-align: center;
     font-size: 1.37rem;
     margin-bottom: 20px;
+    font-family: 'Varsity', sans-serif;
+    font-weight: normal;
+    letter-spacing: 2px;
 }
 
 
@@ -177,7 +205,7 @@ body {
     .apresentacao__links__subtitulo { font-size: 1.25rem; }
     .apresentacao__links__link {
         width: 80%;
-        font-size: ;
+        
         padding: 12px 0;
     }
     .galeria__fotos img {
