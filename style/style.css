@@ -140,19 +140,23 @@ body {
 
 @media (max-width: 768px) {
     .apresentacao {
-        flex-direction: column; /* Texto e imagem em coluna */
+        flex-direction: column; 
         margin: 5%;
-        align-items: flex-start; /* Mantém alinhamento natural */
+        align-items: flex-start; 
     }
 
     .diretoria { order: 1; }
+
     .imagem__brasao { 
         order: 2;
-        position: relative; /* tira o fixed do desktop */
+        position: relative; /* tira o fixed */
+        top: auto; /* reseta o top do desktop */
+        right: auto; /* reseta o right do desktop */
         width: 80%;
         max-width: 300px;
-        margin: 20px auto; /* centraliza horizontalmente */
+        margin: 20px auto; 
     }
+
     .apresentacao__links { order: 3; }
 
     .apresentacao__conteudo {
@@ -173,6 +177,7 @@ body {
         padding: 12px 0;
     }
 }
+
 
 
 
